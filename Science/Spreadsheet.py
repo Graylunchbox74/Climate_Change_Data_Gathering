@@ -21,7 +21,7 @@ y = 1
 conn = sqlite3.connect('weather.db')
 db = conn.cursor()
 
-for row in db.execute("select * from brookingsSD"):
+for row in db.execute("select * from watertownSD"):
     sheet[y,0].value = y
     sheet[y,1].value = row[0]
     sheet[y,2].value = row[1]
