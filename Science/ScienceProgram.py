@@ -8,7 +8,7 @@ import datetime
 #import numpy as np
 conn = sqlite3.connect('weather.db')
 db = conn.cursor()
-key ="0f955463db11c0c103e6d6ebfa5fde40"
+key =""
 #          https://api.darksky.net/forecast/[key]/[latitude],[longitude],[time]
 for time in range (0, 1523768400, 86400):
     URL = "https://api.darksky.net/forecast/" + key + "/44.071071, -103.217924," + str(time) +"?exclude=hourly,currently,minutely,alerts,flags"
